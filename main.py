@@ -4,8 +4,8 @@ import argparse
 # importing modules 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--inp", "-i", help="The file path to the image")
-parser.add_argument("--chunk", "-c", help="[OPTIONAL] The size of the chunk default is 10")
+parser.add_argument("--inp", "-i", help="The File location of the image to be converted to ascii art, this field must be specified")
+parser.add_argument("--chunk", "-c", help="[OPTIONAL] The size of the chunk, default is 10. Lower the parameter, the higher the resolution.")
 parser.add_argument("--out", "-o", help="[OPTIONAL] The output path of the image default is out.png")
 # adding arguments to parser 
 
