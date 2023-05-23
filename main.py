@@ -4,7 +4,7 @@ import argparse
 # importing modules 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--img", "-i", help="The file path to the image")
+parser.add_argument("--inp", "-i", help="The file path to the image")
 parser.add_argument("--chunk", "-c", help="[OPTIONAL] The size of the chunk default is 10")
 parser.add_argument("--out", "-o", help="[OPTIONAL] The output path of the image default is out.png")
 # adding arguments to parser 
@@ -12,10 +12,10 @@ parser.add_argument("--out", "-o", help="[OPTIONAL] The output path of the image
 args = parser.parse_args()
 # parsing arguments 
 
-if args.img == None:
+if args.inp == None:
     raise ValueError("Image Location Not Specified")
 
-imgLocation = str(args.img)
+imgLocation = str(args.inp)
 chunk_size = int(args.chunk) if args.chunk != None else 10
 outputLocation = str(args.out) if args.out != None else "out.png"
 # getting arguments 
